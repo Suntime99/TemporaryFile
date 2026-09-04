@@ -1,0 +1,4 @@
+﻿标题：抚州泽源华府：业委会未经业主大会擅自签约，法院判决撤销
+来源URL：http://www.jxnews.com.cn/system/2025/03/26/020038287.shtml
+抓取失败：HTTPSConnectionPool(host='www.jxnews.com.cn', port=443): Max retries exceeded with url: /system/2025/03/26/020038287.shtml (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)')))
+============================================================

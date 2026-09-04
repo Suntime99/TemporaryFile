@@ -1,0 +1,4 @@
+﻿标题：南京朝天宫街道：信托制阳光居民共管账户收缴费率从10%+升至53%
+来源URL：http://js.fang.com/NEWS/202411/21434602_all.htm
+抓取失败：HTTPConnectionPool(host='js.fang.com', port=80): Max retries exceeded with url: /NEWS/202411/21434602_all.htm (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000288149D1BF0>, 'Connection to js.fang.com timed out. (connect timeout=15)'))
+============================================================

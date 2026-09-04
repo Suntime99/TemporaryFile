@@ -1,0 +1,4 @@
+﻿标题：湖南湘潭：云龙山里手自治模式筹措经费近50万
+来源URL：http://wxb.thepaper.cn/newsDetail_forward_32663337
+抓取失败：HTTPConnectionPool(host='wxb.thepaper.cn', port=80): Max retries exceeded with url: /newsDetail_forward_32663337 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000288149D2030>: Failed to resolve 'wxb.thepaper.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

@@ -1,0 +1,178 @@
+﻿标题：湖北恩施：业委会主任侵占公共收益40万元，换届后潜逃获刑
+来源URL：http://views.ce.cn/view/ent/202507/t20250708_2353723.shtml
+
+小区住宅维修资金，何以成了某些人的“提款机”
+滚动
+2025-07-08 07:22
+光明网
+伍里川
+
+http://localhost:8080/comment/comment?newsid=2353723&encoding=utf-8&data=ACPqOwAAACMAAQAIAAAAAQBC5bCP5Yy65L2P5a6F57u05L-u6LWE6YeR77yM5L2V5Lul5oiQ5LqG5p-Q5Lqb5Lq655qE4oCc5o-Q5qy-5py64oCdAAAAAAAAAAAAAAAuMCwCFCc-gMFnH17-DStALrvTDVE3hnvvAhQjjFYouTIJboCyROTWPPad9aYhoQ..
+
+-->
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    小区住宅维修资金，何以成了某些人的“提款机” _中国经济网——国家经济门户
+    
+    
+    
+    
+
+    
+    
+        .wapwrap { display: none; }
+       .left a:link {color: #434343 !important;text-decoration: none !important;}
+       .left a:visited {text-decoration: none !important;color: #434343 !important;}
+       .left a:hover {text-decoration: underline !important;color: #434343 !important;}
+       .left a:active {text-decoration: none !important;color: #434343 !important;}
+       .fabiao a:visited {text-decoration: none !important;color: #434343 !important;}
+       .fabiao a:hover {text-decoration: underline !important;color: #434343 !important;}
+       .fabiao a:active {text-decoration: none !important;color: #434343 !important;}
+       .fabiao a:link {color: #434343 !important;text-decoration: none !important;}
+        @media  all and (min-width:0px) and (max-width:750px){
+            .pcwrap { display: none; }
+            .wapwrap { display: block; }
+            video{ width:100% !important}
+            table{ width:100% !important}
+        }
+        @media  all and (min-width:751px){
+            .pcwrap { display: block; }
+            .wapwrap { display: none; }
+        }
+       
+    
+
+
+
+
+2353723
+小区住宅维修资金，何以成了某些人的“提款机”
+65544
+滚动
+
+光明网
+武晓娟 
+2025-07-08
+
+
+
+    
+    
+    
+    
+        
+            
+            
+            
+        
+    
+    
+    
+        要闻产业金融证券评论国际
+        地方乡村生态食品汽车生活
+    
+
+    
+    
+        小区住宅维修资金，何以成了某些人的“提款机”
+        
+            2025-07-08 07:22
+            2025-07-08 07:23
+            来源：光明网
+        
+        
+            
+            
+        
+        查看余下全文
+        (责任编辑：武晓娟)
+        
+            
+                function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+                    if(_nPageCount == null || _nPageCount 0){
+                        if(nCurrIndex == 1){
+                            document.write("上一页&nbsp;&nbsp;");
+                        }else{document.write("上一页&nbsp;&nbsp;");}
+                    }
+                    else{
+                        document.write(" ");
+                    }
+
+                    if(_nPageCount1&nbsp;");
+                        else
+                            document.write("1&nbsp;");
+                        for(var i=1; i"+(i+1) + "&nbsp;");
+                            else
+                                document.write(""+(i+1)+"&nbsp;");
+                        }
+
+                    }else{//_nPageCount小于等于4的情况end
+                        //下面这个IF是判断是小于步长的一半的情况的;
+                        if(nCurrIndex 1&nbsp;&nbsp;");
+                                }
+                                if(i == 0 && nCurrIndex!=0){
+                                    document.write("[1]&nbsp;&nbsp;");}
+                                if(i > 0 && i ["+(i+1)+"]&nbsp;&nbsp;");
+                                    else
+                                        document.write("["+(i+1)+"]&nbsp;&nbsp;");
+                                }
+                            }
+                            var nextOver = _nPageCount - nCurrIndex;	//翻页到极限时候;
+                            //alert("nCurrIndex: "+nCurrIndex);
+                            if(nCurrIndex 下一页&nbsp;&nbsp;");
+                            else if (nextOver  0 && i "+(i+1)+"&nbsp;&nbsp;");
+                                else
+                                    document.write(""+(i+1)+"&nbsp;&nbsp;");
+                            }
+                        }
+                    }
+                    //下一页和末页的设置
+                    var nextOver = _nPageCount - nCurrIndex;	//翻页到极限时候;
+                    if(nCurrIndex 下一页&nbsp;&nbsp;");
+                    else if (nextOver 
+        
+        
+
+        
+        
+            
+                
+                    
+                    
+                    
+                
+                
+                    
+                    
+                    
+                
+            
+        
+        
+            分享到微信X
+打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享到我的朋友圈。
+网络传播视听节目许可证(0107190) (京ICP040090)
+本该用于小区的住宅专项维修资金，却成了某些人的“提款机”。业主们发现时，整个资金账户已被动用近1200万元。这事发生在江苏省南京市江宁区天地新城小区。
+根据法律法规，住宅专项维修资金归全体业主所有，用于物业保修期满后共用部位、共用设施设备的维修和更新、改造，不得挪作他用。但在该小区，作为小区自治组织的业委会不仅丧失监督功能，更亲自下场大食“唐僧肉”，令人惊愕。
+该小区年久失修，高层消防系统无法正常使用，展开维修有其必要性。但在维修的名义下，“搞鬼”才是本质。据报道，业委会动用维修基金500多万，通过公开招标与一公司签订消防改造合同。然而，施工结束后，不少业主发现，施工单位提供的《工程量确认单》存在很多问题。经统计，仅感烟探测器一项就少了2428个，涉及金额近38万元。此外，“小区道路出新方案征求意见稿”显示，小区内修路预估114公里，相当于从南京到扬州的距离，堪称离谱。
+把巨额资金当成自己的“私人账户”，伸出黑手大捞特捞，大开贪腐之门，这哪里还是业委会，简直是内鬼。事发后，包括原业委会主任徐某、涉嫌串标的施工单位负责人郭某已被批捕。从小区业主们控诉的桩桩件件来看，他们被追刑责，一点也不冤。
+根据新闻报道，业委会有多处违法，如疑似联合审计公司造假、虚假投标、偷工减料以次充好等等。看上去公开招标、对外公示等程序一应俱全，何以仍然出现贪腐情形？本次案件到底牵涉几人，到底套取了多少维修资金，包括如何追回业主的损失，都还有待警方进一步调查处理。但无疑，此案再次发出警示：在小区自治过程中，监督监管一刻也不可放松，否则就可能被别有用心者撬开缝隙，危害公共利益。
+理想状态下，业委会应是代表业主行使相关权利，管理小区公共事务的组织。根据《物业管理条例》，房地产行政主管部门或者街道办事处、地方人民政府，都负有监管责任。而在此事中，不是没有业主对业委会的诡异做法提出过质疑，强调“前期动用维修资金做的工程项目还没解释清楚”，但群众的声音似乎并未有效地传达出去，从而引发监督监管机制的迅疾反应。这也导致一些严重问题在数年后才被曝光。凡此种种说明，相关领域在监督管理方面仍有漏洞或隐患。
+近年来，小区业委会主任沦为贪腐者的案例比比皆是。例如今年五月消息，湖北恩施一小区业委会主任侵占公共收益40万元，换届后拒绝交账并潜逃，落网后获刑。此外，业委会主任在换物业过程中公然索贿，也不时见诸报道。沉痛教训反复说明，当业委会带病运行、业委会领导监守自盗，明规则必然“潜规则”化，群众利益必受觊觎，小区管理必陷困境。
+谁来监督业委会任性的权力？如何推动业委会运行机制的规范化？如何防止小区内“猫鼠一家”？回答好这些问题，已成完善基层治理不能绕开的课题。
+针对某些小区业委会滥用权力、财务不透明、决策不民主等问题，有关部门当依法强化监督职责，确保业委会规范运作，维护业主合法权益。其中，&nbsp;通过制度和机制完善，进一步明确权责边界、保证决策程序透明化；强化备案审查与日常监管机制，推进业委会财务公开；建立投诉与纠错机制，及时回应群众关切，是重中之重。
+============================================================

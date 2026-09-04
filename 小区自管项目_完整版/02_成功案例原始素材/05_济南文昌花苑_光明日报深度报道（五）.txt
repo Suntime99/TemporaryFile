@@ -1,0 +1,359 @@
+﻿标题：光明日报：小区物业自管调查 如何破解谁来管
+来源URL：https://epaper.gmw.cn/gmrb/html/2022-06/27/nw.D110000gmrb_20220627_1-06.htm
+
+';
+ content += '';
+ content += '';
+ content += '';
+ content += '';
+ document.getElementById("showArtPicsDiv").innerHTML = content;
+ }
+}
+
+
+
+
+
+
+
+
+html,body{ width:100%; min-width:1020px; font-family:\5B8B\4F53; margin: 0 auto; overflow-x: hidden;}
+
+#channelHead {
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 1px #999 solid;
+}
+
+.headtopNav {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 4px 0;
+    height: 24px;
+    line-height: 24px;
+    _padding-bottom: 0;
+}
+
+.headtopNav span {
+    margin: 0 5px;
+    color: #bb2737;
+}
+
+.channeLogin {
+    width: 450px;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+
+.headLogin {
+    width: 80px;
+    height: 18px;
+    border: 1px #ccc solid;
+}
+
+.headSubLog {
+    width: 50px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.whereGo li {
+    width: 100px;
+    height: 24px;
+    background: #fff;
+    border: 1px #999 solid;
+    float: right;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.whereGo {
+    margin-right: 9px;
+}
+
+.whereGo li a {
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+}
+
+.whereGo li ul {
+    display: none;
+}
+
+.whereGo li ul li {
+    border-top: none;
+    position: relative;
+    z-index: 2;
+    left: 1px;
+    top: 1px;
+    background: #f2f2f2;
+}
+
+.whereGo li ul a:hover li {
+    background: #bb2737;
+    color: #fff;
+}
+
+.whereGo li:hover ul {
+    display: block;
+}
+
+.channelNav {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+    padding-top: 6px;
+}
+
+.channelNav li {
+    padding: 0 11px;
+    list-style: none;
+    float: left;
+    border-right: 1px #ccc solid;
+    font-size: 12px;
+    color: #000;
+    line-height: 14px;
+}
+
+.channelNav li a {
+    color: #000;
+}
+
+.channelNav li a:hover {
+    color: #bb2737;
+}
+
+.lightgrey12 {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.footLine {
+    clear: both;
+	width: 1000px;
+    margin: 0 auto;
+    height: 0;
+    font-size: 0;
+    border-bottom: 1px #999 solid;
+}
+
+
+
+    
+
+
+    
+        首页English
+        
+    载入中...
+    -->
+        
+            您想去哪里？
+                
+                    
+                        光明图片
+                    
+                    
+                        我要投稿
+                    
+                
+            
+        
+        
+    
+    
+
+
+    时政
+    国际
+    时评
+    理论
+    文化
+    科技
+    教育
+    经济
+    生活
+    法治
+    军事
+    卫生
+    健康
+    女人
+    文娱
+    电视
+    图片
+    科普
+    光明报系
+    更多>>
+
+
+function getCookie(c_name) //获得指定名称的cookie值
+{
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=")
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1
+            c_end = document.cookie.indexOf(";", c_start)
+            if (c_end == -1) c_end = document.cookie.length
+            return unescape(document.cookie.substring(c_start, c_end))
+        }
+    }
+    return ""
+}
+
+var cookie_name = decodeURIComponent(getCookie('Example_auth_username'));
+var cookie_name_epaper = decodeURIComponent(getCookie('Example_auth_username_epaper'));
+
+if (document.getElementById('loginbar_new') != null) {
+    var if_loginbar_new = 1;
+}
+
+if (if_loginbar_new == 1) {
+    if (cookie_name.length > 0 && cookie_name_epaper.length > 0) {
+        document.getElementById('loginbar_new').innerHTML = "" + cookie_name_epaper + "&nbsp;&nbsp;您好!&nbsp;&nbsp;光明网用户统一登录平台&nbsp;&nbsp;光明日报社员工门户&nbsp;&nbsp;安全退出";
+    } else if (cookie_name.length > 0 && cookie_name_epaper.length " + cookie_name + "&nbsp;&nbsp;您好!&nbsp;&nbsp;光明网用户统一登录平台&nbsp;&nbsp;安全退出";
+
+    } else if (cookie_name.length  0) {
+        document.getElementById('loginbar_new').innerHTML = "" + cookie_name_epaper + "&nbsp;&nbsp;您好!&nbsp;&nbsp;光明日报社员工门户&nbsp;&nbsp;安全退出";
+    } else {
+        document.getElementById('loginbar_new').style.display = "none";
+    }
+
+}
+
+
+
+
+$(document).ready(function() {
+    $("#articleContent p[mce_keep=true]").each(function() {
+        if ($(this).html() == "&nbsp;") { //如果没有文字，仅为一个空格
+            $(this).remove(); //删除空行
+        }
+    });
+
+
+    for (var i = 0; i 
+
+
+
+var url = location.href.split('#')[0];
+$.ajax({
+    url: "//jshare.gmw.cn/app/gmwshare/wx/7/9/",
+    //url:"//jshare.gmw.cn/now/sourectoken/sdk.js",
+    data: {
+        url: url
+    },
+    method: "GET",
+    dataType: "jsonp",
+    jsonp: "callback",
+    jsonpCallback: "jsonpCallback",
+    success: function(data) {
+        wx.config({
+            // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            debug: false,
+            // 必填，公众号的唯一标识
+            appId: data[0].wx_appid,
+            // 必填，生成签名的时间戳
+            timestamp: data[1].wx_timestamp,
+            // 必填，生成签名的随机串
+            nonceStr: data[2].wx_nonceStr,
+            // 必填，签名
+            signature: data[3].wx_signature,
+            // 必填，需要使用的JS接口列表
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage'
+            ]
+        });
+        wx.ready(function() {
+            var shareTitle = document.title;
+            var shareImg = $("#shareImg").attr('src') || window.location.protocol + '//img.gmw.cn/pic/gmrb_logo_white_180x180.png';
+            var shareDes = document.querySelector('meta[name="description"]') ? document.querySelector('meta[name="description"]').getAttribute('content') : '光明数字报';
+            //var link_o =  decodeURIComponent( GetQueryString( "location" ) );
+            //console.log("link_o:" + link_o);
+            wx.onMenuShareTimeline({
+                title: document.title,
+                desc: shareDes,
+                imgUrl: shareImg,
+                link: window.location.href,
+                trigger: function(res) {
+                    // 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+                    //alert('用户点击发送给朋友');
+                },
+                success: function(res) {
+                    //alert('已分享');
+                },
+                cancel: function(res) {
+                    //alert('已取消');
+                },
+                fail: function(res) {
+                    //alert(JSON.stringify(res));
+                }
+            });
+            wx.onMenuShareAppMessage({
+                title: document.title,
+                desc: shareDes,
+                imgUrl: shareImg,
+                link: window.location.href,
+                trigger: function(res) {
+                    // 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+                    //alert('用户点击发送给朋友');
+                },
+                success: function(res) {
+                    //alert('已分享');
+                },
+                cancel: function(res) {
+                    //alert('已取消');
+                },
+                fail: function(res) {
+                    //alert(JSON.stringify(res));
+                }
+            });
+        });
+    },
+    error: function(error) {
+        //alert("error")
+    }
+})
+
+
+
+
+
+ 
+
+ 
+
+
+  
+  
+    
+       
+        
+    
+    
+      
+        
+          
+            06版:学习贯彻习近平新时代中国特色社会主义思想专刊
+&nbsp;&nbsp;
+             上一版&nbsp;&nbsp;下一版 
+          
+        
+      
+    
+	
+
+.gmrb_copyright{ font-size:14px; line-height:1.5em; color:#900; padding:5px;}
+
+
+版权声明：凡《光明日报》上刊载作品（含标题），未经本报或本网授权不得转载、摘编、改编、篡改或以其它改变或违背作者原意的方式使用，授权转载的请注明来源“《光明日报》”。
+光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明网邮箱 | 网站地图
+============================================================

@@ -1,0 +1,4 @@
+﻿标题：鄂州弘华园官柳小区：e透明小程序实现全程留痕
+来源URL：http://hb.yzfb.org.cn/gzdt/6117.html
+抓取失败：HTTPConnectionPool(host='hb.yzfb.org.cn', port=80): Max retries exceeded with url: /gzdt/6117.html (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000288149D1AE0>: Failed to resolve 'hb.yzfb.org.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

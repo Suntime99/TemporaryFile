@@ -1,0 +1,4 @@
+﻿标题：宁波紫郡花园：三分之二的满意度
+来源URL：https://newchannel.hzcbw.com/content/d87c2e529e.html?spp=pc
+抓取失败：HTTPSConnectionPool(host='newchannel.hzcbw.com', port=443): Max retries exceeded with url: /content/d87c2e529e.html?spp=pc (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028814757C50>: Failed to resolve 'newchannel.hzcbw.com' ([Errno 11001] getaddrinfo failed)"))
+============================================================

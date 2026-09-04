@@ -1,0 +1,4 @@
+﻿标题：深圳深业新岸线：业委会累计为业主创收604万元
+来源URL：https://gz.caijing.com.cn/2025/0402/5139956.shtml
+抓取失败：HTTPSConnectionPool(host='gz.caijing.com.cn', port=443): Max retries exceeded with url: /2025/0402/5139956.shtml (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000288165A0050>: Failed to resolve 'gz.caijing.com.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

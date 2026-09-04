@@ -1,0 +1,4 @@
+﻿标题：济南文昌花苑：业委会自管十年物业费降至一元
+来源URL：https://jnsb.jnnews.tv/system/2024/08/15/031179344.shtml
+抓取失败：HTTPSConnectionPool(host='jnsb.jnnews.tv', port=443): Max retries exceeded with url: /system/2024/08/15/031179344.shtml (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028814756FD0>: Failed to resolve 'jnsb.jnnews.tv' ([Errno 11001] getaddrinfo failed)"))
+============================================================

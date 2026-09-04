@@ -1,0 +1,4 @@
+﻿标题：呼和浩特3711小区分类治理：信托制/酬金制/共享制三类并行
+来源URL：http://app.nmgnews.com.cn/system/2026/07/09/011055480.shtml
+抓取失败：HTTPConnectionPool(host='app.nmgnews.com.cn', port=80): Max retries exceeded with url: /system/2026/07/09/011055480.shtml (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000288149D19D0>: Failed to resolve 'app.nmgnews.com.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

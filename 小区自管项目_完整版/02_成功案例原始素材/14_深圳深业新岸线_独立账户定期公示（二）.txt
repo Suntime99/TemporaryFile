@@ -1,0 +1,4 @@
+﻿标题：深圳深业新岸线业委会：独立账户管理公共收益
+来源URL：https://m.gzcbs.cn/article/details/28928674
+抓取失败：HTTPSConnectionPool(host='m.gzcbs.cn', port=443): Max retries exceeded with url: /article/details/28928674 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000288165A07D0>: Failed to resolve 'm.gzcbs.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

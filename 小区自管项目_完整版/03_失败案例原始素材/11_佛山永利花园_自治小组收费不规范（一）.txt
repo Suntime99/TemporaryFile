@@ -1,0 +1,12 @@
+﻿标题：佛山永利花园：自治小组收费不规范账目不公开，业主拒绝缴费
+来源URL：https://content.foshanplus.com/newsDetails.html?newsId=849973
+
+{{news.newsvote.title}}
+该投票截止于{{news.newsvote.endtime}}
+{{news.newsvote.title}}
+该投票截止于{{news.newsvote.endtime}}
+{{item.type==1?' ':''}}
+{{item.personalSignature}}
+{{childen.username }}：
+{{childen.username }}：
+============================================================

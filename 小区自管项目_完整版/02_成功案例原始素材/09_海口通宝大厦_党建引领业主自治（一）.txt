@@ -1,0 +1,4 @@
+﻿标题：海南三亚海棠湾镇博后村：党建引领业主自治
+来源URL：http://hnapi.hainandaily.cn/hnwb/hnwb/sz/pc/content/202607/14/content_9271940.html
+抓取失败：HTTPConnectionPool(host='hnapi.hainandaily.cn', port=80): Max retries exceeded with url: /hnwb/hnwb/sz/pc/content/202607/14/content_9271940.html (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000028814A09350>: Failed to resolve 'hnapi.hainandaily.cn' ([Errno 11001] getaddrinfo failed)"))
+============================================================

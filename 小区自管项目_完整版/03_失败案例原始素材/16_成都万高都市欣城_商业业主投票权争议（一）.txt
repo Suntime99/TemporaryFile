@@ -1,0 +1,4 @@
+﻿标题：成都万高都市欣城：业委会对商业业主投票权认定存在争议
+来源URL：https://jx.people.com.cn/BIG5/n2/2025/1024/c350824-40421811.html
+抓取失败：HTTPSConnectionPool(host='jx.people.com.cn', port=443): Max retries exceeded with url: /BIG5/n2/2025/1024/c350824-40421811.html (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'jx.people.com.cn'. (_ssl.c:1028)")))
+============================================================

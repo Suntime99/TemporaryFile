@@ -1,0 +1,4 @@
+﻿标题：宁夏银川恒安苑：76岁老人独管物业10年，67%业主投票要求清退
+来源URL：http://toutiao.aizhan.com/695408.html
+抓取失败：HTTPConnectionPool(host='toutiao.aizhan.com', port=80): Max retries exceeded with url: /695408.html (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000288149D19D0>: Failed to resolve 'toutiao.aizhan.com' ([Errno 11001] getaddrinfo failed)"))
+============================================================

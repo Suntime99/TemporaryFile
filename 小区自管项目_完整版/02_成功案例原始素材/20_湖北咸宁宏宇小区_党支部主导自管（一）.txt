@@ -1,0 +1,4 @@
+﻿标题：湖北咸宁宏宇小区：党支部主导自管13年零投诉
+来源URL：https://cqhouse.swsinfo.com/market/house/202401/4048521.html
+抓取失败：HTTPSConnectionPool(host='cqhouse.swsinfo.com', port=443): Max retries exceeded with url: /market/house/202401/4048521.html (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028814756C10>: Failed to resolve 'cqhouse.swsinfo.com' ([Errno 11001] getaddrinfo failed)"))
+============================================================
