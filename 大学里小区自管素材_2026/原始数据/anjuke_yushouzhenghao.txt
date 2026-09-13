@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>验证码</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="stylesheet" rev="stylesheet" href="https://include.anjukestatic.com/aifang/res/46550/b/Aifang_Web_Captcha_CaptChaVerify.css" type="text/css" />
+    
+<script type="text/javascript">
+    var xxfwConfig = {
+        namespace:'anjuke_xinfang_c_pc'
+    };
+</script>
+<script type="text/javascript" src='//pages.anjukestatic.com/kfstouch/js/58antiSpider/20180807001/xxfw.min.js'  async defer></script>    <script type="text/javascript">var PAGESTART = +new Date();var __base_url =""</script>
+    <script type="text/javascript" src="//anjukestatic.58cdn.com.cn/ee/_xinfang/pages/djs/base/logger/dom.dom/ajax/event/ui.autocomplete/cookie/site/d7371891429c96b9068e71d55a82b6e0.js"></script>
+    
+
+    <link rel="icon" href="//pages.anjukestatic.com/kfstouch/img/new_ico/favicon.ico" type="image/ico"/>
+    <link rel="shortcut icon" href="//pages.anjukestatic.com/kfstouch/img/new_ico/favicon.ico"/>
+</head>
+<body >
+<style>
+    #header{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+    body { padding:0; margin:10px; text-align:center;}
+    .wrapper { width:100%; height:100%; margin-top:140px;}
+    .image { margin:10px 0 }
+    p{
+        font-size:14px;
+    }
+    input{
+        display:block;
+        margin:0 auto 10px;
+        border:0;
+        padding:0;
+    }
+    .image img{display:block;margin:0 auto;}
+    .btns { width:143px; height:40px;color:#fff;background:#f60; }
+    .geetest_captcha {
+        display: flex !important;
+        justify-content: center !important;
+    }
+</style>
+<div class="wrapper">
+        <div class="info">
+        <div>
+            <form id="captchaForm" method="post" action="" name="form">
+                <input type="hidden" name="successToken" id="successToken" value="" />
+                <input type="hidden" name="sessionId" id="sessionId" value="1a75057aaf4047fab5089c262e129a43" />
+                <div id="ISDCaptcha"></div>
+            </form>
+        </div>
+        <h2>
+            IP:27.37.127.218        </h2>
+    </div>
+        <div class="clear"></div>
+</div>
+
+
+
+<script type="text/javascript"  src="//j1.58cdn.com.cn/resource/xxzl/captcha/js/isd_captcha.js?v=1789308000000"></script>
+<script type="text/javascript" crossorigin src="https://include.anjukestatic.com/aifang/res/46550/b/Aifang_Web_Captcha_CaptChaVerify.js"></script>
+<script type="text/javascript">
+
+    if(ISDCaptcha && typeof ISDCaptcha === 'function') {
+        var captcha = ISDCaptcha({
+            'element' : 'ISDCaptcha',
+            'width' : 280,//宽度
+            'type' : 31206,//验证码级别
+            'showType'   : 'embed', //  ['embed', 'trigger', 'win']//如果不传此值，默认为嵌入式.embed：嵌入式.trigger：触发式.win:弹出式
+            'sessionId' : '1a75057aaf4047fab5089c262e129a43',
+            'targetElm':'submit',//只对弹出式有效,如果是根据后端策略确定是否为弹出时
+            //'winAutoShow':true,//弹出式时添加此属性会自动弹出,默认为false,不自动弹出
+            'successCallback' : function successCallback(data) {
+                document.getElementById("successToken").value = data.successToken;
+                document.getElementById("captchaForm").submit();
+            },
+            'failCallback' : function failCallback(data) {
+            }
+        })
+        captcha.init();
+
+        function check_code(){
+            $("error_msg").innerHTML = '';
+            var code = $('').value;
+            if(code == ''){
+                $("error_msg").innerHTML ='验证码必须填写';
+                return false;
+            }
+            return true;
+        }
+    }
+
+</script>
+</body>
+</html>

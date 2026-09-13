@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="中冶·大学里,中冶·大学里售楼电话,中冶·大学里价格,中冶·大学里详情 ">
+<meta name="description" content=" ">
+<meta name="author" content="liuke" />
+<title>中冶·大学里 - 楼市楼盘 - 0731房产网</title>
+<link href="../Center/template/style/style.css" rel="stylesheet" type="text/css"> 
+<link href="http://img.0731fdc.com/style/link.css" rel="stylesheet" type="text/css">  
+<script src="../Center/template/js/jquery.min.js" type="text/javascript" charset="gb2312"></script>
+<script type="text/javascript" src="../Center/template/js/tips.js"></script>
+<script type="text/javascript">
+ function setTab(name,num,n,more){
+ 	for(i=1;i<=n;i++){
+ 		var menu=document.getElementById(name+i);
+ 		var con=document.getElementById(name+"_"+"con"+i);
+ 		menu.className=i==num?"cur":"";
+   		con.style.display=i==num?"block":"none";
+ 	}
+ }
+ 
+ function SetCookie(name,value){
+ 	var exp=new Date();
+ 	exp.setTime(exp.getTime()+24*3600000);
+ 	document.cookie=name+"="+escape(value)+";expires="+exp.toGMTString()+";path=/";
+ }
+ //获得COOKIE
+ function GetCookie(name){
+ 	var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+ 	if(arr!=null){
+ 		return unescape(arr[2]);
+ 	}else{
+ 		return "";
+ 	}
+ }
+ 
+ function delCookie(id)
+ {
+ 	var cooks=GetCookie("floorid").split("/"),dstr="";
+ 	for(var i=1;i<cooks.length;i++){
+ 		if(cooks[i].split("_")[0]!=id){
+ 			dstr+="/"+cooks[i];
+ 		}
+ 	}
+ 	SetCookie("floorid",dstr);	
+ }
+ 
+ //刷新checked状态
+ function initInput(){
+ 	var cook=GetCookie("floorid");
+ 	var nrid=$("#ddd input");
+ 	for(var i = 0;i<nrid.length;i++){
+ 		   if(cook.indexOf(nrid[i].id) > -1){
+ 		   	nrid[i].checked=true;
+ 		   }else {
+ 		   	nrid[i].checked=false;
+ 		   }
+ 	}
+ }
+ 
+ //刷新漂浮窗口
+ function initDiv(){
+ 	var alls=0;
+ 	ouli='';
+ 	var cooks = GetCookie("floorid").split("/"); 
+ 	for(var i=1;i<cooks.length;i++){
+ 		alls++;
+ 		var wf=cooks[i].split("_");
+ 		ouli+="<li><span  title='去除选项' onclick='Delli("+wf[0]+")'/></span><a href='http://floor.0731fdc.com/content/"+wf[0]+".shtml' target='_blank'> "+wf[1].replace("&%#","/")+"</a></li>";
+ 	}
+ 	$("#float-con ul:first").html(ouli);
+ 	$('#yfloat').html(alls); 
+ 	if(ouli!=''){
+ 		$("#tishi").css('display','none'); 
+ 	}else {
+ 		$("#tishi").css('display','inline'); 
+ 	}
+ }
+ 
+ function Divreset() {
+ 	initDiv();
+ 	initInput();
+ }
+ //删除选项
+ function Delli(id){
+     delCookie(id);
+     initDiv();
+     initInput();
+ }
+ 
+ function clears()
+ {
+ 	SetCookie("floorid","")
+ 	Divreset();
+ }
+ 
+ 
+$(document).ready(function(){
+	$('#mid').html('<p align=center><img src="../Center/template/images/loading.gif"><p><p align=center>价格公示及五证信息正在加载中</p>');
+	$.ajax({
+	  url: 'data.php',
+	  data: "id="+13773,
+	  cache: false,
+	  success: function(html)
+	  {
+		  $('#mid').html(html);
+	  }
+	});
+	
+	$(window).scroll(function() {
+	         var bodyTop = 0;
+	         if (typeof window.pageYOffset != 'undefined') {
+	             bodyTop = window.pageYOffset
+	         } else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
+	             bodyTop = document.documentElement.scrollTop
+	         } else if (typeof document.body != 'undefined') {
+	             bodyTop = document.body.scrollTop
+	         }
+	         $("#compare").css("top", 250 + bodyTop)
+	     }); 
+	
+	
+	     
+	     $("#float-title").click(function(){
+	     	$("#xfloat").hide();
+	     	$("#yfloat").show();
+	     });
+	     $("#yfloat").click(function(){
+	     	$("#yfloat").hide();
+	     	$("#xfloat").show();
+	     });
+	     
+	     $("#ddd input").change(function() {
+	     	t= $(this).attr('checked');
+	     	i= $(this).attr('id');
+	     	v=$(this).val();
+	     	if(t==true){
+	     		var cook = GetCookie("floorid");		
+	     		cooks=cook.split('/');    		
+	     		if(cook.indexOf(i)>-1){
+	     			alert(v+"已经加入对比，请不要重复添加");
+	     			$(this).attr("checked", false);
+	     			return
+	     		}else if(cooks.length>3){
+	     			alert('最多添加3个楼盘，请先删除楼盘再添加！');
+	     			$(this).attr("checked", false);
+	     			return
+	     		}else {
+	     			$("#yfloat").hide();
+	     			$("#xfloat").show();     			
+		            SetCookie("floorid",cook+'/'+i+"_"+v.replace("/","&%#"));
+		            Divreset();
+		            return
+	     		}  		
+	     	}else {
+	     		delCookie(i);
+	     		return
+	     	}
+	     	Divreset();
+	     });    
+	     
+	     $("#pk-button").click(function() {
+	     	var cooks=GetCookie("floorid").split("/");
+	     	var url = "";
+	     	for(var i = 0;i<cooks.length ;i++)
+	     	{
+	     	    var pkid = cooks[i].substr(0,cooks[i].indexOf("_"));
+	     	    if(pkid.length > 0 ){
+	     	        url += "_"+pkid;
+	     	    }
+	     	}
+	     	if(url.length > 7)
+	     	{
+	     	    window.open("/compare_floor.php?id="+url);
+	     	}
+	     	else
+	     	{
+	     	    alert("请先选择要对比的楼盘");
+	     	}
+	     	return false;
+	     
+	     });
+	     $('#gyrjl').tipsy({gravity: 's'}); 
+	     $('#gylhl').tipsy({gravity: 's'}); 
+
+	 	setInterval(Divreset,1000);
+})
+
+ 
+</script>
+</head>
+<body>
+<link href="http://img.0731fdc.com/style/cs/logo_xf.css?v=2.0" rel="stylesheet" type="text/css" />
+<script language="javascript" src="http://img.0731fdc.com/js/flash.js"></script>
+
+<div class="bluenav"></div>
+<div id="nav">
+	<div id="mini_nav_l">
+    	<ul>
+        	<li>&nbsp;欢迎光临0731房产网 <a href="http://www.0731fdc.com" target="_blank" class="red">长沙站</a> <a href="http://zz.0731fdc.com" target="_blank" class="red">株洲站</a> <a href="http://xt.0731fdc.com" target="_blank" class="red">湘潭站</a></li>
+        	<li id="setIndex"><a title="把0731房产网设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.0731fdc.com/');" href="javascript:void(0);" target="_self" >设为首页</a></li>
+        	<li id="addFavorite">加入收藏</li>
+        	<li class="ad"><a href="http://www.0731fdc.com/test/bjkl/1.htm" target="_blank" title="广告服务">广告服务</a></li>
+        </ul>
+    </div>
+    <div id="mini_nav_r">
+    	<ul>
+        	<li><a href="http://www.0731fdc.com/96148.htm" target="_blank" title="佳佳置业小帮手">佳佳置业小帮手</a></li>
+			<li><a href="http://wap.0731fdc.com" target="_blank" title="0731手机网">0731手机网</a></li>
+	        <li><a href="http://www.0731fdc.com/lsh" target="_blank" title="0731楼市会">0731楼市会</a></li>
+            <li><a href="http://www.0731fdc.com/e_magazine/" target="_blank" title="《长沙楼市》">《长沙楼市》</a></li>
+        	<li style="text-align:center">
+            	<select style="width:80px;" onchange="if (this.selectedIndex!=0) window.open(this.value)">
+                	<option>中城房网</option>
+                    <option value="http://www.fdc.com.cn/">武汉</option>
+                    <option value="http://www.szhome.com/">深圳</option>
+                    <option value="http://www.xmhouse.com/">厦门</option>
+                    <option value="http://www.hfhouse.com/">合肥</option>
+                    <option value="http://www.800j.com.cn/">西安</option>
+                    <option value="http://www.efw.cn/">无锡</option>
+                    <option value="http://www.0731fdc.com/">长沙</option>
+                    <option value="http://www.jxdcw.com/">南昌</option>
+                    <option value="http://www.9ihome.com/">赣州</option>
+                </select>
+         	 </li>
+        </ul>
+    </div>
+</div>
+<div class="box" style="overflow:hidden">
+    <div id="logo">
+        <h1><a href="http://floor.0731fdc.com" title="0731新房网">0731新房网</a></h1>
+        <ul>
+            <li class="index">
+                <a href="http://www.0731fdc.com" target="_blank" title="长沙站">长沙站</a>
+            </li>
+            <li>
+                <a href="http://xt.0731fdc.com" target="_blank" title="湘潭站">湘潭站</a>
+            </li>
+            <li>
+                <a href="http://zz.0731fdc.com" target="_blank" title="株洲站">株洲站</a>
+            </li>
+        </ul>
+    </div> 
+	<div id="banner">
+    	<div id='ad_164'></div>
+		<script language="javascript" src="http://as.0731fdc.com/AiShun/ads/ads.php?apid=164"></script>
+        <div id="smf">
+        <div id='ad_29'></div>
+        <script language="javascript" src="http://as.0731fdc.com/AiShun/ads/ads.php?apid=29"></script>
+    	</div>
+	</div>
+    <div id="topmenu">
+        <ul>
+            <li class="n01"><a href="http://www.0731fdc.com" title="首页">首页</a></li>
+            <li class="n02"><a href="http://floor.0731fdc.com" title="新房网" target="_blank">新房网</a></li>
+            <li class="n03"><a href="http://tg.0731fdc.com/" title="团购网" target="_blank">团购网</a></li>
+            <li class="n04"><a href="http://tv.0731fdc.com/" title="视频网" target="_blank">视频网</a></li>
+			<li class="n05 new1"><a href="http://www.0731fdc.com/dcyjy" title="地产研究院" target="_blank">地产研究院</a><!-- <span id="tgnew"></span> --></li>
+            <li class="n06"><a href="http://esf.0731fdc.com" title="二手房网" target="_blank">二手房网</a></li>
+            <!-- <li class="n07"><a href="http://gov.0731fdc.com/" title="政务网" target="_blank">政务网</a></li> -->
+            <li class="n08"><a href="http://home.0731fdc.com/" title="家装网" target="_blank">家装网</a></li>
+            <li class="n09"><a href="http://bbs.0731fdc.com" title="楼市论坛" target="_blank">楼市论坛</a></li>
+        </ul>
+    </div>
+</div>
+<div id="hq_news">
+<a href="http://floor.0731fdc.com/" target="_blank">返回首页</a> |
+<a href="http://floor.0731fdc.com/search.php" target="_blank" >楼盘比一比</a> |
+<a href="http://floor.0731fdc.com/kaipan.php">最新开盘</a> |
+<a href="http://tv.0731fdc.com/?act=list&mid=7" target="_blank" >全景看房</a> |
+<a href="http://floor.0731fdc.com/map.php" >地图找房</a> |
+<a href="http://tg.0731fdc.com" target="_blank" >房产团</a> |
+<a href="http://www.0731fdc.com/shouse" target="_blank" >看房车</a> |
+<a href="http://www.0731fdc.com/Fdc_Pic/" target="_blank"> 大熊看楼</a> |
+<a href="http://floor.0731fdc.com/phb" target="_blank">楼市排行</a> |
+<a href="http://bbs.0731fdc.com" target="_blank">业主论坛</a>
+</div>
+<style>
+a.redd:link { font-size:12px;text-decoration: none ;color:#f00;font-weight: bold;}
+a.redd:visited {font-size:12px;text-decoration: none;color:#f00;font-weight: bold;}
+a.redd:hover {font-size:12px;text-decoration: underline;color:#000;font-weight: bold;}
+a.redd:active {font-size:12px;text-decoration: none;color:#f00;font-weight: bold;}
+</style>
+<div id="mainNav">
+    <dl id="csnews">
+        <dt><a href="http://news.0731fdc.com" target="_blank">新闻中心</a></dt>
+        <dd><a href="http://news.0731fdc.com/?mod=hyks" target="_blank">慧眼看市</a></dd>
+        <dd><a href="http://news.0731fdc.com/?mod=hyjs" target="_blank">行业警示</a> </dd>
+    </dl>
+    <dl id="csfloor">
+        <dt><a href="http://floor.0731fdc.com" target="_blank">新房</a></dt>
+        <dd><a href="http://news.0731fdc.com/?mod=lpdg" target="_blank">楼盘导购</a></dd>
+        <dd><a href="http://www.0731fdc.com/Fdc_Pic" target="_blank">大熊看楼</a></dd>
+    </dl>
+    <dl id="esfnavs">
+        <dt><a href="http://esf.0731fdc.com" target="_blank">二手房</a></dt>
+        <dd><a href="http://esf.0731fdc.com/listing/agent" target="_blank">挂牌房源</a></dd>
+        <dd><a href="http://esf.0731fdc.com/company" target="_blank">金牌门店</a></dd>
+    </dl>
+    <!-- <dl id="gov">
+        <dt><a href="http://gov.0731fdc.com" target="_blank">政务</a></dt>
+        <dd><a href="http://gov.0731fdc.com/company" target="_blank">企业互动</a></dd>
+        <dd><a href="http://gov.0731fdc.com/guide" target="_blank">办事指南</a></dd>
+    </dl> -->
+    <dl id="dcyj">
+        <dt><a href="http://www.0731fdc.com/dcyjy" target="_blank">地产研究</a></dt>
+        <dd><a href="http://floor.0731fdc.com/phb/?mod=lsjd" target="_blank">市场监测</a></dd>
+        <dd><a href="http://news.0731fdc.com/?mod=list&act=news&catid=160" target="_blank">潇湘楼语</a></dd>
+    </dl>
+    <dl id="home">
+        <dt><a href="http://home.0731fdc.com" target="_blank">家装</a></dt>
+        <dd><a href="http://home.0731fdc.com/?act=news" target="_blank">家装资讯</a></dd>
+        <dd><a href="http://home.0731fdc.com/?act=case" target="_blank">装修图库</a></dd>
+    </dl>
+    <dl id="Bbs">
+        <dt><a href="http://bbs.0731fdc.com" target="_blank">论坛</a></dt>
+        <dd><a href="http://www.0731fdc.com/hottopic" target="_blank">楼市话题</a></dd>
+        <dd><a href="http://bbs.0731fdc.com/forum.php?gid=1153" target="_blank">业主论坛</a></dd>
+    </dl>
+    <dl id="video">
+        <dt><a href="http://tv.0731fdc.com/" target="_blank" class="menu">视频</a></dt>
+        <dd><a href="http://tv.0731fdc.com/?act=list&mid=7" target="_blank">全景看房</a></dd>
+        <dd><a href="http://tv.0731fdc.com/?act=list&mid=3" target="_blank">视频展播</a></dd>
+    </dl>
+    <dl id="csgroup">
+        <dt><a href="http://tg.0731fdc.com" target="_blank">团房</a></dt>
+        <dd><a href="http://www.0731fdc.com/lsh/?act=kfc" target="_blank">看房车</a></dd>
+        <dd><a href="http://www.0731fdc.com/oneprice" target="_blank">房产团</a></dd>
+        <dd id="groupbtn"><a href="http://www.0731fdc.com/lsh" target="_blank"><font>0731</font>楼市会</a></dd>
+    </dl>
+</div>
+<div class="h7"></div><script  type="text/javascript" charset="gb2312">
+$(document).ready(function(){
+ $("#ssqy").change(function(){  
+ 	if($(this).val()=='宁乡'){
+ 		$("#subway").html('<option value="a">地铁线路</option>');
+ 	}
+ 	$.ajax({ 
+ 		    url: './ssqy.php',
+ 		    type: 'POST',
+ 		    data:'area='+$(this).val(),
+ 		    dataType: 'html',
+ 		    error: function(){
+ 		     alert('Error loading!');
+ 		    },
+ 		    success: function(html){			     	
+ 		  	 $("#ssbkid").html(html);
+ 		    }			    
+ 	});	
+ 	
+ });
+ 
+ $("#ssbkid").change(function(){  
+ 		$.ajax({ 
+ 			    url: './ssqy.php',
+ 			    type: 'POST',
+ 			    data:'ssbkid='+$(this).val(),
+ 			    dataType: 'html',
+ 			    error: function(){
+ 			     alert('Error loading!');
+ 			    },
+ 			    success: function(html){			     	
+ 			  	 $("#subway").html(html);
+ 			    }			    
+ 		});				
+ });
+});
+</script>
+<div class="box"> 
+<div style="position:relative;height:32px ;width: 960px;float: left;">
+<div class="topsearch" id="topsearch">
+	<form method="get" action="http://floor.0731fdc.com/search.php">
+	<dl>
+		<dt>楼盘速查：</dt>
+		<dd>
+			<select name="ssqy" id="ssqy">
+				<option value="1">区县/地段</option>
+				<option value="天心" >天心区</option>
+				<option value="雨花" >雨花区</option>
+				<option value="芙蓉" >芙蓉区</option>
+				<option value="岳麓" >岳麓区</option>
+				<option value="开福" >开福区</option> 
+				<option value="长沙县" >长沙县</option>
+				<option value="浏阳" >浏阳市</option>
+				<option value="望城" >望城区</option>
+				<option value="宁乡" >宁乡县</option> 
+			</select>
+		</dd>
+		<dd>
+			<select name="ssbkid" id="ssbkid" >
+				<option value="a">热点片区</option> 
+				<option value="1">中心板块</option>
+				<option value="2">省府南城板块</option>
+				<option value="3">武广新城板块</option>
+				<option value="4">北城板块</option>
+				<option value="5">伍家岭-月湖板块</option>
+				<option value="6">马王堆板块</option>
+				<option value="7">东站板块</option>
+				<option value="8">麓南含浦板块</option>
+				<option value="9">梅溪湖板块</option>
+				<option value="10">麓谷板块</option>
+				<option value="11">金星北板块</option>
+				<option value="12">暮云板块</option>
+				<option value="13">星沙板块</option>
+				<option value="14">市府板块</option>
+			</select>
+		</dd>
+		<dd>
+			<select name="subway"  id="subway">
+				<option value="a">地铁线路</option>
+				<option value="1">1号线</option>
+				<option value="2">2号线</option>
+				<option value="3">3号线</option>
+				<option value="4">4号线</option>
+				<option value="5">5号线</option>
+				<option value="6">6号线</option>
+				<option value="8">城际轻轨</option>
+			</select>
+		</dd>
+		<dd>
+			<select name="zxzt">
+				<option value="">装修状态</option>
+				<option value="0">毛胚房</option>	
+				<option value="1">精装修</option>				
+			</select>
+		</dd>
+		<dd>
+			<select name="price" >
+				<option value="">价格范围</option>
+				<option value="4000">4000元以下</option>
+				<option value="4000-5000">4000-5000元</option>
+				<option value="5000-6000">5000-6000元</option>
+				<option value="6000-8000">6000-8000元</option>
+				<option value="8000-10000">8000-10000元</option>
+				<option value="10000">10000元以上</option>
+			</select>
+		</dd>
+		 
+		<dd>
+			<input type="text" name="q" value=""  style="width: 120px;"/>
+		</dd>
+		<dd>
+			<input type="submit" name="" value="" id="search-button"/>
+		</dd>
+		<dd><a href="http://floor.0731fdc.com/map.php" target="_blank" id="dtzf"></a></dd>
+	</dl>
+	</form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var IO=document.getElementById('topsearch'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+    if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ 
+</script> <div class="h7"></div><div id="min_head">
+	<div id="head">
+		<div id="headleft">
+			<div>
+				<h1>中冶·大学里</h1>
+				<span id="status"><a href="http://floor.0731fdc.com/search.php?zt=1" target="_blank"><img src="http://floor.0731fdc.com/Center/template/images/0.jpg"></a></span>
+				<span id="fwylx">普通住宅</span> 
+			</div>
+			<ul id="head-left-bottom">
+				<li style="text-indent: 20px;">访问人数：<font>69448</font></li>
+				<li>团购人数：<font>1</font></li>				<li><a href="http://floor.0731fdc.com/content/13773.shtml#wytg" id="wytgs" title="我要团购"></a></li>
+			</ul>
+		</div>
+		<div id="headmid">
+			<ul id="wylx">
+				<li id='toptab1' onmouseover=setTab('toptab',1,1)><a href='http://floor.0731fdc.com/search.php?hmts=1#choices' target='_blank' class='white'>教育楼盘</a></li>			</ul>
+			<div id="toptab_con1" ></div>		</div>
+		<div id="headright">
+						<!--
+			<ul>
+			    <li>更新时间：2018-08-01</li>
+			    <li><a href="http://floor.0731fdc.com/errcheck.php?id=13773" target="_blank" style="background: none;width: 120px; color: #999">开发商资料纠错</a></li>
+			</ul>
+			-->
+		</div>
+    </div>
+	<ul id="head-tab">
+		<li ><a href="http://floor.0731fdc.com/info.php?id=13773">楼盘首页</a></li>
+	    <li id="active"><a href="http://floor.0731fdc.com/detail.php?id=13773">项目详情</a></li>
+	    <li ><a href="http://floor.0731fdc.com/news.php?id=13773" >楼盘快讯</a></li>
+	    <li  target="_blank"><a href="http://floor.0731fdc.com/dxx.php?id=13773">户栋详情</a></li> 
+	    <li ><a href="http://floor.0731fdc.com/photo.php?id=13773">楼盘相册</a></li>
+		
+		    <li ><a href="http://bbs.0731fdc.com/forum.php?gid=1153" target="_blank">业主论坛</a></li>
+		<li ><a href="http://floor.0731fdc.com/complain.php?id=13773">社会监督</a></li> 
+		<li id="edit">更新时间：2018-08-01</li>
+	</ul>
+</div>
+<div class="h7"></div>
+<script src="http://www.0731fdc.com/lsh/?act=history&type=floor&hid=13773" type="text/javascript"></script><div class="box">
+	<div id="item-view-left">
+		<div class="item-view-title">
+			<h3>中冶·大学里基本信息<u></u></h3>
+		</div>
+		<div class="item-view-con">
+			<dl>
+				<dd><b>曾 用 名</b> 中冶·大学里</dd>
+				<dd><b>装修状态</b> <a href="http://floor.0731fdc.com/search.php?zxzt=0#choices" target="_blank">毛胚房</a></dd>
+				<dd><b>规划户数</b> 1608</dd>
+				<dd><span>[<a href="photo.php?type=hxt&id=13773" target="_blank">查看户型图</a>]</span><b>主力户型</b> 108㎡ 126㎡</dd>
+				<dd><b>开 发 商</b> 湖南怡富置业有限责任公司</dd>
+				<dd><span>[<a href="search.php?ssqy=雨湖" target="_blank">同区域楼盘</a>]</span><b>所属区域</b> 雨湖区 </dd>
+				
+				<dd class="w100"><b>项目地址</b>湘潭市雨湖区湘潭大学东畔<font><a href="content/13773.shtml#dt" class="red">[查看地图]</a></font></dd>
+				<dd class="w100"><b>0731房产网为您提供的 中冶·大学里 售楼电话</b>  <font style="font-family:微软雅黑,黑体;font-size: 16px;color: red;">400-818-8155 </font><b>&nbsp;*本网特价楼盘团购电话</b>  <font>84662191</font></dd>
+			</dl>
+			<dl id="mid">
+				<p align=center>加载中···如遇不能加载，请 <a href="javascript:window.location.reload()">刷新</a> 页面</p>
+			</dl>
+			<dl>
+				<dd><b>竣工时间 </b> 2013.9.30</dd>
+				<dd><b>开盘时间 </b> 暂无资料</dd>
+				<dd><b>总占地面积</b>100亩</dd>	
+				<dd><b>总建筑面积</b>180000㎡</dd>	
+				<dd><span>[<a href="#" title="容积率，是指一个小区的总建筑面积与用地面积的比率。" id="gyrjl">关于容积率</a>]</span><b>容 积 率 </b>2.58</dd>	
+				<dd><span>[<a href="#" title="绿化率是指小区用地范围内各类绿地的总和与小区用地的比率，主要包括公共绿地、宅旁绿地、配套公建所属绿地和道路绿地等。" id="gylhl">关于绿化率</a>] </span><b>绿 化 率 </b>30.21</dd>	
+				<dd><b>物 业 费 </b>1.5</dd>	
+				<dd><b>物业管理 </b>湘潭市金鼎物业管理有限公司</dd>	
+				<dd><b>建筑结构 </b>框架</dd>	
+				<dd><b>施工单位 </b>中冶一冶集团厦门分公司</dd>	
+				<dd><b>设计单位 </b>湖南科迪建设设计有限公司</dd>	
+				<dd><b>销售代理 </b>中原（湖南）房地产代理公司</dd>	
+				<dd><b>售楼地址 </b>湘潭市雨湖区湘潭大学东畔</dd>
+			</dl>
+			<p class="zx-news"><a href="news.php?id=13773" target="_blank">最新楼盘动态</a></p>
+			<ul id="zx-news"><li style='height:auto'>·大学里，位于湘潭大学旁  37-87平米公寓即将加推，预计6月份开盘，价格待定。...[<a href='news.php?id=13773' target=_blank>更多</a>]</li></ul>
+		</div>
+		
+		<div class="item-view-title">
+			<h3>中冶·大学里周边配套<u></u></h3> 
+		</div>
+		<div class="item-view-con">
+			<p>暂无资料</p>
+		</div>
+		
+		<div class="item-view-title">
+			<h3>中冶·大学里交通状况<u></u></h3> 
+		</div>
+		<div class="item-view-con">
+			<p>107路   13路  6路车  </p>
+		</div>
+		
+		<div class="item-view-title">
+			<h3>中冶·大学里车位信息<u></u></h3> 
+		</div>
+		<div class="item-view-con">
+			<p>22个</p>
+		</div>
+		
+		<div class="item-view-title">
+			<h3>中冶·大学里项目介绍<u></u></h3> 
+		</div>
+		<div class="item-view-con">
+			<p>大学里是一个纯粹西班牙风情建筑及景观园林设计，预计分三年三期开发，产品形态涵盖有退台式花园洋房、小高层、高层、单身公寓、商业门面等多种类型的复合型大型社区。目前在推的是项目的一期，主推产品为多层花园退台洋房。主推面积在70——170㎡之间。房型从二房至四房。 一期产品最大特色为退台式花园洋房、类别墅产品及多变户型。</p>
+		</div>
+	</div>
+	
+	<div id="item-view-right">
+			<div id="ddd">
+			<div class="item-view-right-title">
+				<h2 class="item-h3">同区域楼盘</h2><span><a href="search.php?ssqy=雨湖" target="_blank">更多>></a></span>
+			</div>
+			<div class="item-view-right-con">
+				<dl class="floor">
+					<dt><span class="a" style="text-align: center;">楼盘名称</span><span class="b">参考价格</span><span class="b">比一比</span></dt>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12133.shtml" target="_blank" title="逸墅庄园一期">逸墅庄园一期</a></span><span class="b">2903</span><span class="b"><input type="checkbox" id="12133" value="逸墅庄园一期" /><label for="12133">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12127.shtml" target="_blank" title="逸墅庄园二期">逸墅庄园二期</a></span><span class="b">3697</span><span class="b"><input type="checkbox" id="12127" value="逸墅庄园二期" /><label for="12127">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/37162.shtml" target="_blank" title="锦绣世家·西苑">锦绣世家·西苑</a></span><span class="b">4200</span><span class="b"><input type="checkbox" id="37162" value="锦绣世家·西苑" /><label for="37162">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/39802.shtml" target="_blank" title="潭房·中央公园　">潭房·中央公园　</a></span><span class="b">6500</span><span class="b"><input type="checkbox" id="39802" value="潭房·中央公园　" /><label for="39802">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/40341.shtml" target="_blank" title="天元广场·玺园">天元广场·玺园</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="40341" value="天元广场·玺园" /><label for="40341">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/41104.shtml" target="_blank" title="天元·江湾">天元·江湾</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="41104" value="天元·江湾" /><label for="41104">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/40961.shtml" target="_blank" title="沁园锋尚一期">沁园锋尚一期</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="40961" value="沁园锋尚一期" /><label for="40961">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/39561.shtml" target="_blank" title="湘江富力城">湘江富力城</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="39561" value="湘江富力城" /><label for="39561">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/40741.shtml" target="_blank" title="湘佳上城一期">湘佳上城一期</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="40741" value="湘佳上城一期" /><label for="40741">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/40701.shtml" target="_blank" title="碧桂园·大学印象">碧桂园·大学印象</a></span><span class="b">待定</span><span class="b"><input type="checkbox" id="40701" value="碧桂园·大学印象" /><label for="40701">比一比</label></span></dd>
+									</dl>
+			</div> 
+						<div class="item-view-right-title">
+				<h2 class="item-h3">同价位楼盘</h2><span><a href="./search.php?tjw=3580" target="_blank">更多>></a></span>
+			</div>
+			<div class="item-view-right-con">
+				<dl class="floor">
+					<dt><span class="a" style="text-align: center;">楼盘名称</span><span class="b">参考价格</span><span class="b">比一比</span></dt>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12127.shtml" target="_blank" title="逸墅庄园二期">逸墅庄园二期</a></span><span class="b">3697</span><span class="b"><input type="checkbox" id="12127" value="逸墅庄园二期" /><label for="12127">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/41241.shtml" target="_blank" title="开阳智能制造产业园">开阳智能制造产业</a></span><span class="b">4000</span><span class="b"><input type="checkbox" id="41241" value="开阳智能制造产业园" /><label for="41241">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12076.shtml" target="_blank" title="白石古莲城夏荷里">白石古莲城夏荷里</a></span><span class="b">4000</span><span class="b"><input type="checkbox" id="12076" value="白石古莲城夏荷里" /><label for="12076">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12056.shtml" target="_blank" title="天元·新府华城">天元·新府华城</a></span><span class="b">3800</span><span class="b"><input type="checkbox" id="12056" value="天元·新府华城" /><label for="12056">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12105.shtml" target="_blank" title="锦绣世家">锦绣世家</a></span><span class="b">3200</span><span class="b"><input type="checkbox" id="12105" value="锦绣世家" /><label for="12105">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12085.shtml" target="_blank" title="新景·西城上筑">新景·西城上筑</a></span><span class="b">3900</span><span class="b"><input type="checkbox" id="12085" value="新景·西城上筑" /><label for="12085">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12529.shtml" target="_blank" title="天元·湘江国际">天元·湘江国际</a></span><span class="b"><font>3288  </font>元/平方米</span><span class="b"><input type="checkbox" id="12529" value="天元·湘江国际" /><label for="12529">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/12571.shtml" target="_blank" title="九华新城">九华新城</a></span><span class="b">3500</span><span class="b"><input type="checkbox" id="12571" value="九华新城" /><label for="12571">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/13773.shtml" target="_blank" title="中冶·大学里">中冶·大学里</a></span><span class="b">3580</span><span class="b"><input type="checkbox" id="13773" value="中冶·大学里" /><label for="13773">比一比</label></span></dd>
+										<dd><span class="a"><a href="http://floor.0731fdc.com/content/14812.shtml" target="_blank" title="新都汇">新都汇</a></span><span class="b">3400</span><span class="b"><input type="checkbox" id="14812" value="新都汇" /><label for="14812">比一比</label></span></dd>
+									</dl>
+			</div>
+						</div>
+			<div class="item-view-right-title">
+				<h2 class="item-h3">周楼盘销售排行</h2><span><a href="http://floor.0731fdc.com/phb" target="_blank">更多>></a></span>
+			</div>
+			<div class="item-view-right-con" id="item-view-right-con" >
+				<dl style="padding-top: 5px;">
+					<dt style="padding: 0;margin-left: -25px;"><span style="text-align: center;width: 110px;">楼盘名称</span><span  style="width:60px;text-align: center;">区域</span><span style="width: 50px;">套数(套)</span></dt>
+					<dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201409280872" target=_blank title="八方小区（二期）">八方小区（二期）</a></span><span class="pb">岳麓</span><span class="pb">572</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201310182185" target=_blank title="鑫宸公寓">鑫宸公寓</a></span><span class="pb">天心</span><span class="pb">122</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201502150136" target=_blank title="恒大商业广场">恒大商业广场</a></span><span class="pb">雨花</span><span class="pb">110</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=BC0907010077" target=_blank title="怡海星城">怡海星城</a></span><span class="pb">天心</span><span class="pb">44</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201308084732" target=_blank title="锦峰苑">锦峰苑</a></span><span class="pb">岳麓</span><span class="pb">41</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201403133594" target=_blank title="梅溪四季家园二期">梅溪四季家园二期</a></span><span class="pb">岳麓</span><span class="pb">33</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201307220445" target=_blank title="北辰三角洲奥城E3区">北辰三角洲奥城E3区</a></span><span class="pb">开福</span><span class="pb">32</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201410144136" target=_blank title="添阶商业广场">添阶商业广场</a></span><span class="pb">雨花</span><span class="pb">31</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201404180087" target=_blank title="观澜海赋家园一期">观澜海赋家园一期</a></span><span class="pb">岳麓</span><span class="pb">31</span></dd><dd><span class="pa"><a href="http://floor.0731fdc.com/cinfo.php?xmbh=201209244530" target=_blank title="金茂苑">金茂苑</a></span><span class="pb">岳麓</span><span class="pb">31</span></dd>				</dl>
+			</div>
+			<div class="item-view-right-title">
+				<h2 class="item-h3">购房QQ群</h2><a name="qqgroup" id="qqgroup"></a>
+			</div>
+			<div class="item-view-right-con" id="item-view-right-con" >
+                <ul class="qqgroup-ul">
+                    <li>南城1：206769962</li>
+					<li>南城3：78627962</li><li>南城5：7567476</li>
+					<li>北城1：107286562</li><li>北城2：129320440</li>
+					<li>北城3：69962317</li><li>河西3：174447148</li>
+					<li>尚东1：139388813</li>
+					<li>星沙2：105781247</li>
+					<li>投资：220503376</li> 
+                </ul>
+			</div>	
+	</div>
+</div>
+<div class="box">
+<p style="padding: 5px;line-height: 22px;border: 1px solid #dedede;">
+<b>免责申明：</b>本网房源信息来源于长沙市房产信息中心预警预报系统，所有预售房源均为开发商取得预售许可证备案信息，公示价格为开发商在取得预售许可证时的备案价格，根据相关政策，具体销售价格，开发商有权在公示价格上下10%范围内浮动，项目备案信息刷新周期为24小时。楼盘详情页基本信息资料均为开发商提供，效果图、户型图等信息仅供参考，具体以开发商为准。本网有权但无义务，改善或修正资料、图片等信息之错误或疏漏。
+</p>
+</div>
+<!-- 对比 begin -->
+<div id="compare"> 
+ 		<div id="xfloat">
+ 			<div id="float-title">楼盘比一比</div>
+ 			<div id="float-con">
+ 				<div id="tishi">对不起，您还没有选择房源</div>
+ 				<ul></ul>
+ 				<div class="pkbut"><span id="pk-button">开始对比</span><font onclick="clears()">清空对比栏</font></div>
+ 			</div>
+ 		</div>
+		<div id="yfloat">(3)</div>
+</div>
+<!-- 对比 end -->
+<style>
+#footer{
+	text-align: center;padding: 15px 0 15px 0;line-height: 26px; border-top:1px solid #CCC; margin-top:20px;
+}
+</style>
+<div class="box footer" id="footer">
+	<!-- <div>
+		<a href="http://floor.0731fdc.com/" target="_blank">返回首页</a> |
+		<a href="http://floor.0731fdc.com/search.php" target="_blank" >楼盘比一比</a> |
+		<a href="http://floor.0731fdc.com/map.php" >地图找房</a> |
+		<a href="http://tg.0731fdc.com" target="_blank" >房产团</a> |
+		<a href="http://www.0731fdc.com/shouse" target="_blank" >看房车</a> |
+		<a href="http://www.0731fdc.com/Fdc_Pic/" target="_blank"> 大熊看楼</a> |
+		<a href="http://floor.0731fdc.com/phb" target="_blank">楼市排行</a>  |
+		<a href="http://bbs.0731fdc.com" target="_blank">业主论坛</a>
+	</div> -->
+	为了本系统能够更好的为您服务，请使用1024*768显示及IE6.0或以上版本浏览器<br>
+	Coryright (c)2017 版权所有 长沙市网络传媒有限公司<br>
+	技术支持：长沙楼市数码科技有限公司 广告业务咨询电话：0731-82897653 0731-82897654 资讯热线：0731-82897656 <!-- 经营许可证号：湘ICP备18014232号-1  -->
+	经营许可证号：<a href="https://beian.miit.gov.cn" target="_blank">湘ICP备18014232号</a>
+
+	<br>
+	All rights reserved, www.0731fdc.com E-mail:web@0731fdc.com
+</div>
+<!-- <script src="http://www.hngswj.gov.cn/scripts/dzbs.js?id=69" type="text/javascript"></script> -->
+<!-- Piwik -->
+<script type="text/javascript">
+ var pkBaseURL = (("https:" == document.location.protocol) ? "https://tongji.0731fdc.com/" : "http://tongji.0731fdc.com/");
+ document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+ </script><script type="text/javascript">
+ try {
+ var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 9);
+ piwikTracker.trackPageView();
+ piwikTracker.enableLinkTracking();
+ } catch( err ) {}
+ </script><noscript><p><img src="http://tongji.0731fdc.com/piwik.php?idsite=9" style="border:0" alt="" /></p></noscript>
+ <!-- End Piwik Tracking Code --></body>
+</html>
