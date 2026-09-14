@@ -1,0 +1,438 @@
+东莞案例：2023两会 政协委员张敬智 加快全市住宅小区二次供水设施改造
+来源: https://www.dg165.com/plus/view-79132-1.html (东莞+, 2023-02-07)
+状态:200 len:56455
+
+二次供水设施是保障城镇居民用水需求的重要基础设施，在缓解城镇区域性供水压力不足和解决高层建筑居民用水问题中发挥了重要作用。进一步改革东莞市供水行业管理模式，加快推进居民住宅小区二次供水抄表到户，将供水" name="description" />
+    <meta name="baidu-site-verification" content="codeva-p6vXPsXAnD" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- 主要css开始 -->
+    <link href="https://www.dg165.com/static/assets/icon/css/icon.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.dg165.com/static/assets/global/css/pc.css" rel="stylesheet" type="text/css" />
+    <!-- 主要css结束 -->
+    <!-- 风格css开始 -->
+    <link href="https://www.dg165.com/static/default/web/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- 风格css结束 -->
+    <!-- 系统关键js(所有自建模板必须引用) -->
+    <script type="text/javascript">var is_mobile_cms = '';var web_dir = '/';</script>
+    <script src="https://www.dg165.com/api/language/zh-cn/lang.js" type="text/javascript"></script>
+    <script src="https://www.dg165.com/static/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="https://www.dg165.com/static/assets/js/cms.js" type="text/javascript"></script>
+    <!-- 系统关键js结束 -->
+    <script src="https://www.dg165.com/static/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://www.dg165.com/static/default/web/scripts/app.min.js" type="text/javascript"></script>
+    <script src="https://www.dg165.com/static/assets/js/quick-sidebar.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            </script>
+   
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cc2fcef6a545e842269d1bbd9446f3a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body class="page-container-bg-solid">
+<div class="page-wrapper">
+
+    <div class="page-wrapper-row">
+        <div class="page-wrapper-top">
+            <div class="page-header">
+
+                <div class="page-header-top margin-top-40">
+                    <div class="container">
+
+                        <div class="page-logo">
+                            <a href="https://www.dg165.com/">
+                                <img src="https://www.dg165.com/static/assets/logo-web.png" alt="东莞网" class="logo-default">
+                            </a>
+                        </div>
+                        <div class="page-header-module">
+                                                    </div>
+                        <div class="page-header-search margin-top-10">
+                            <form class="search-form" action="/index.php" method="get">
+                                <input type="hidden" name="s" value="api">
+                                <input type="hidden" name="c" value="api">
+                                <input type="hidden" name="m" value="search">
+                                <input type="hidden" name="dir" id="dr_search_module_dir" >
+                                <div class="input-group">
+                                    <div class="input-group-btn btn-group">
+                                        <button id="dr_search_module_name" type="button" class="btn default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <!--这是来列出全部可以搜索的内容模块-->
+                                                                                                                                                                                <li><a href="javascript:dr_search_module_select('article', '内容');"> 内容 </a></li>
+                                                                                                                                </ul>
+                                    </div>
+                                    <input type="text" placeholder="搜索内容..." name="keyword" class="fc-search-keyword form-control">
+                                    <div class="input-group-btn">
+                                        <button class="btn default" type="submit"> <i class="fa fa-search"></i> </button>
+                                    </div> 
+                                    
+                                </div>
+                                <script>
+                                    // 这段js是用来执行搜索的
+                                    function dr_search_module_select(dir, name) {
+                                        $("#dr_search_module_dir").val(dir);
+                                        $("#dr_search_module_name").html(name+' <i class="fa fa-angle-down"></i>');
+                                    }
+                                    dr_search_module_select('article', '内容');
+                                </script>
+                            </form>
+                        </div>
+                       <div> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/member.html" style="border:1px solid;padding:2px 2px; width:50px;border-radius:25px;">用户中心</a></div>
+                    </div>
+                    
+                </div>
+                <div class="page-header-menu margin-top-10">
+                    <div class="container">
+                        <div class="hor-menu">
+                            <ul class="nav navbar-nav">
+                                <li id="dr_nav_0" class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/" title="东莞网">首页</a>
+                                </li>
+
+                                <!--调用共享栏目-->
+                                <!--第一层：调用pid=0表示顶级-->
+                                                                <li class="menu-dropdown classic-menu-dropdown  active">
+                                    <a href="https://www.dg165.com/list-1.html" title="莞事" >莞事</a>
+                                                                        <ul class="dropdown-menu pull-left">
+                                        <!--第二层：调用第二级共享栏目-->
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-12.html" class="nav-link nav-toggle " title="社会民生">
+                                                社会民生                                            </a>
+                                                                                    </li>
+                                                                                <li class=" active">
+                                            <a href="https://www.dg165.com/list-13.html" class="nav-link nav-toggle " title="本地资讯">
+                                                本地资讯                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-20.html" class="nav-link nav-toggle " title="文化">
+                                                文化                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-21.html" class="nav-link nav-toggle " title="企业">
+                                                企业                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-31.html" class="nav-link nav-toggle " title="走进东莞">
+                                                走进东莞                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-zpxx.html" class="nav-link nav-toggle " title="东莞招聘">
+                                                东莞招聘                                            </a>
+                                                                                    </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-2.html" title="街镇" >街镇</a>
+                                                                        <ul class="dropdown-menu pull-left">
+                                        <!--第二层：调用第二级共享栏目-->
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-32.html" class="nav-link nav-toggle " title="东莞南城">
+                                                东莞南城                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-33.html" class="nav-link nav-toggle " title="东莞东城">
+                                                东莞东城                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-34.html" class="nav-link nav-toggle " title="东莞莞城">
+                                                东莞莞城                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-35.html" class="nav-link nav-toggle " title="东莞万江">
+                                                东莞万江                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-36.html" class="nav-link nav-toggle " title="东莞虎门">
+                                                东莞虎门                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-37.html" class="nav-link nav-toggle " title="东莞长安">
+                                                东莞长安                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-43.html" class="nav-link nav-toggle " title="东莞塘厦">
+                                                东莞塘厦                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-44.html" class="nav-link nav-toggle " title="东莞凤岗">
+                                                东莞凤岗                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-45.html" class="nav-link nav-toggle " title="东莞松山湖">
+                                                东莞松山湖                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-46.html" class="nav-link nav-toggle " title="东莞厚街">
+                                                东莞厚街                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-47.html" class="nav-link nav-toggle " title="东莞寮步">
+                                                东莞寮步                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-48.html" class="nav-link nav-toggle " title="东莞大朗">
+                                                东莞大朗                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-49.html" class="nav-link nav-toggle " title="东莞麻涌">
+                                                东莞麻涌                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-50.html" class="nav-link nav-toggle " title="东莞黄江">
+                                                东莞黄江                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-51.html" class="nav-link nav-toggle " title="东莞企石">
+                                                东莞企石                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-52.html" class="nav-link nav-toggle " title="东莞清溪">
+                                                东莞清溪                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-53.html" class="nav-link nav-toggle " title="东莞道滘">
+                                                东莞道滘                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-54.html" class="nav-link nav-toggle " title="东莞大岭山">
+                                                东莞大岭山                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-55.html" class="nav-link nav-toggle " title="东莞高埗">
+                                                东莞高埗                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-56.html" class="nav-link nav-toggle " title="东莞中堂">
+                                                东莞中堂                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-57.html" class="nav-link nav-toggle " title="东莞石碣">
+                                                东莞石碣                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-58.html" class="nav-link nav-toggle " title="东莞东坑">
+                                                东莞东坑                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-59.html" class="nav-link nav-toggle " title="东莞茶山">
+                                                东莞茶山                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-60.html" class="nav-link nav-toggle " title="东莞石排">
+                                                东莞石排                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-61.html" class="nav-link nav-toggle " title="东莞洪梅">
+                                                东莞洪梅                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-62.html" class="nav-link nav-toggle " title="东莞横沥">
+                                                东莞横沥                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-63.html" class="nav-link nav-toggle " title="东莞樟木头">
+                                                东莞樟木头                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-64.html" class="nav-link nav-toggle " title="东莞石龙">
+                                                东莞石龙                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-65.html" class="nav-link nav-toggle " title="东莞望牛墩">
+                                                东莞望牛墩                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-66.html" class="nav-link nav-toggle " title="东莞常平">
+                                                东莞常平                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-67.html" class="nav-link nav-toggle " title="东莞沙田">
+                                                东莞沙田                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-68.html" class="nav-link nav-toggle " title="东莞桥头">
+                                                东莞桥头                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-69.html" class="nav-link nav-toggle " title="东莞谢岗">
+                                                东莞谢岗                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-72.html" class="nav-link nav-toggle " title="东莞滨海湾新区">
+                                                东莞滨海湾新区                                            </a>
+                                                                                    </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-3.html" title="财经" >财经</a>
+                                                                        <ul class="dropdown-menu pull-left">
+                                        <!--第二层：调用第二级共享栏目-->
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-28.html" class="nav-link nav-toggle " title="消费">
+                                                消费                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-42.html" class="nav-link nav-toggle " title="产经">
+                                                产经                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-zhengquan.html" class="nav-link nav-toggle " title="证券">
+                                                证券                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-23.html" class="nav-link nav-toggle " title="商业">
+                                                商业                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-22.html" class="nav-link nav-toggle " title="宏观">
+                                                宏观                                            </a>
+                                                                                    </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-15.html" title="热点" >热点</a>
+                                                                        <ul class="dropdown-menu pull-left">
+                                        <!--第二层：调用第二级共享栏目-->
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-17.html" class="nav-link nav-toggle " title="国内">
+                                                国内                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-18.html" class="nav-link nav-toggle " title="国际">
+                                                国际                                            </a>
+                                                                                    </li>
+                                                                                <li class="">
+                                            <a href="https://www.dg165.com/list-27.html" class="nav-link nav-toggle " title="社会">
+                                                社会                                            </a>
+                                                                                    </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-jiaoyu.html" title="教育" >教育</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-jiankang.html" title="健康" >健康</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-fangchan.html" title="房产" >房产</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-pinglun.html" title="评论" >评论</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-IT.html" title="互联网" >互联网</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-keji.html" title="科技" >科技</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="http://b2b.dg165.com" title="供求"  target="_blank">供求</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-yule.html" title="娱乐" >娱乐</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-gz.html" title="关注" >关注</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="//mail.dg165.com/" title="企业邮箱"  target="_blank">企业邮箱</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="http://www.dongguan.gd.cn" title="网站建设"  target="_blank">网站建设</a>
+                                                                    </li>
+                                                                <li class="menu-dropdown classic-menu-dropdown ">
+                                    <a href="https://www.dg165.com/list-tiyu.html" title="体育" >体育</a>
+                                                                    </li>
+                                
+
+
+                          
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<script type="text/javascript">
+window.location.href = "https://www.dg165.com/index.php?s=member&c=login";
+</script>
+
+-->
+<div class="page-wrapper-row">
+  <a href="http://www.dongguan.gd.cn" title="东莞企业邮箱、东莞做网站"><div style="width:100%;height:600px;background:url(https://www.dg165.com/static/assets/yu_banner1.jpg) no-repeat center;"></div></a>  
+</div>
+<div class="page-wrapper-row full-height">
+    <div class="page-wrapper-middle">
+        <div class="page-head">
+            <div class="container">
+                <div class="page-title">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+
+            <div class="container">
+
+                <ul class="page-breadcrumb breadcrumb">
+                    <li>
+                        <a href="https://www.dg165.com/">网站首页</a>
+                        <i class="fa fa-circle"></i>
+                    </li>
+                    <li> <a href="https://www.dg165.com/list-1.html">莞事</a> <i class="fa fa-circle"></i> </li><li> <a href="https://www.dg165.com/list-13.html">本地资讯</a> <i class="fa fa-circle"></i> </li>                    <li>
+                        <span>2023东莞两会|市政协委员张敬智：加快全市住宅小区二次供水设施改造</span>
+                    </li>
+                </ul>
+
+                <div class="search-page search-content-2">
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="portlet light">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <span class="caption-subject font-dark  ">2023东莞两会|市政协委员张敬智：加快全市住宅小区二次供水设施改造</span>
+                                    </div>
+                                </div>
+                                <div class="search-post-foot fc-content-tool">
+                                    <div class="search-post-meta">
+                                        <i class="fa fa-user font-blue"></i>
+                                        <a href="javascript:;">东莞+</a>
+                                    </div>
+                                    <div class="search-post-meta">
+                                        <i class="fa fa-calendar font-blue"></i>
+                                        <a href="javascript:;">2023-02-07 16:38:54</a>
+                                    </div>
+                                   <!-- <div class="search-post-meta">
+                                        <i class="fa fa-eye font-blue"></i>
+                                        <a href="javascript:;"><span class="dr_show_hits_79132">0</span><script type="text/javascript">var apiurl="/index.php?s=api&c=module&siteid=1&app=article"; $.ajax({ type: "GET", url:apiurl+"&m=hits&id=79132", dataType: "jsonp", success: function(data){ if (data.code) { $(".dr_show_hits_79132").html(data.msg); } else { dr_tips(0, data.msg); } } }); </script>次</a>
+                                    </div>
+                                    -->
+                                </div>
+                                <div class="portlet-body" style="height: auto;overflow: hidden;">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">二次供水设施是保障城镇居民用水需求的重要基础设施，在缓解城镇区域性供水压力不足和解决高层建筑居民用水问题中发挥了重要作用。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">进一步改革东莞市供水行业管理模式，加快推进居民住宅小区二次供水抄表到户，将供水服务延伸至用户终端，二次供水设施改造已迫在眉睫。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em; text-align: center;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;"><img src="https://u.dg165.com/uploads/202302/efbc2798de4b8.jpeg" alt="" width="" height="" id="img-63e20d4ce4b06a3fb1681f74" style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; vertical-align: middle; float: none; width: auto !important; height: auto !important;"/></span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">东莞市政协委员、市党外知识分子联谊会副会长、广东丰瑞佰顺集团有限公司董事长张敬智建议，加快推进全市住宅小区二次供水设施改造，切实保障市民“最后一公里”饮用水安全。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">二次供水设施的建设和管理涉及环节众多，涵盖了多个部门职责。张敬智介绍，如水务局负责组织和指导全市二次供水工程建设和设施维护的管理，但二次供水设施作为房屋建筑的附属设施，从前期设计、施工建设到竣工验收整个过程均由住建部门进行审批并给予许可。因监管合力较弱，导致少数小区开发商选取的设施材质大多不符合行业标准要求，再加上设计不规范、不合理等因素，二次供水设施投入使用后出现较多的水质安全隐患等问题。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">为进一步理顺管理体制，张敬智认为应该配套出台相关政策措施。一是加强与省有关部门沟通，把握下来省修编《广东省城市供水管理规定》的机遇，建议省在推进二次供水抄表到户管理方面出台更为明确的强制性条款；二是建立健全二次供水联动管理机制，加强部门协调联动，在住建部门办理房屋建设审批的环节，考虑增加水务部门及供水企业对房屋配套二次供水设施的审查意见，共同推动东莞市二次供水设施改造及抄表到户管理工作，实现从源头建设到后期运行维护全过程接受规范化监管；三是建议市价格管理部门牵头尽快研究制定二次供水设施运行维护收费办法，规范运行维护的服务范围和收费标准，为有效推进二次供水设施改造、移交管理等工作提供明确的价格指引。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">目前东莞市居民二次供水设施运维管理主体复杂，包括委托物业服务公司管理、社区或业务委员会管理、供水企业专业管理、无人管理等多种模式，且大部分管理单位缺乏相应人员配备及专业技术。针对这一问题，张敬智建议，尽快启动二次供水抄表到户前期工作，制定方案，分批推进。根据“因地制宜，轻重缓急，先易后难，分批推进”的原则，制定具体实施方案，由市水务局牵头协调，供水企业负责实施，各有关职能部门配合。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">二次供水设施改造过程中涉及供水管网改造、加压设备更新、抄表到户等工作，是一项系统性的供水工程。而东莞市二次供水设施数量众多，改造任务量大，实施抄表到户管理前必须全部进行改造。由于涉及多方主体的复杂性问题，若单靠用户、管理单位及供水企业自行筹措资金，实施难度较大。可以说，二次供水设施改造任务量大，资金筹措困难。为此，张敬智建议应当拓宽筹措渠道，强化资金保障。</span></p><p style="box-sizing: border-box; margin: 0em 0em 1em; padding: 0px; border: none; color: rgb(33, 33, 33); font-family: &quot;PingFang SC&quot;; font-size: 16px; white-space: normal; background-color: rgb(255, 255, 255); line-height: 1.75em;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: none; line-height: 1.75em;">因二次供水设施改造资金较大，建议分期实施，此外为进一步拓宽筹措渠道，强化资金保障，张敬智建议考虑以下几种出资方案：一是采用财政全额出资的方式，市镇两级承担；二是采用财政+供水企业组合出资的方式；三是采用财政+供水企业+用户组合出资的方式。</span></p><p><br/></p>                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="blog-single-foot fc-news-tag-list">
+                                                <ul class="blog-post-tags">
+                                                    <!--关键词搜索-->
+                                                                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+<div id="dr_module_comment_79132"></div><script type="text/javascript"> function dr_ajax_module_comment_79132(type, page) { var index = layer.load(2, { time: 10000 });$.ajax({type: "GET", url: "/index.php?s=article&c=comment&m=index&id=79132&&type="+type+"&page="+page+"&"+Math.random(), dataType:"jsonp", success: function (data) { layer.close(index); if (data.code) { $("#dr_module_comment_79132").html(data.msg); } else { dr_tips(0, data.msg); } }, error: function(HttpRequest, ajaxOptions, thrownError) { layer.closeAll(); var msg = HttpRequest.responseText;  alert("评论调用函数返回错误："+msg);  } }); } dr_ajax_module_comment_79132(0, 1); </script>                                <div class="blog-single-foot">
+                                    <p class="fc-show-prev-next">
+                                        <strong>
