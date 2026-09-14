@@ -1,0 +1,1 @@
+https://callback.58.com/antibot/verifycode?serialId=b8bee3b66773ce416fb9450e7bc5d0a5_6033758d42a143fbbdff93bf5b4f11eb&amp;code=300&amp;sign=046c5c1d6785dcc1cbbae85fd1aa68d1&amp;namespace=cloud_ajk_usersite_default&amp;url=https%3A%2F%2Fwww.anjuke.com%2Fxiaoqu%2F
